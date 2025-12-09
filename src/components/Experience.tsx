@@ -79,16 +79,18 @@ export const Experience = () => {
           <div className="space-y-12">
             {experiences.map((exp, idx) => (
               <div
-                key={exp.title}
+                key={exp.title + idx}
                 className={`relative transition-all duration-700 ${
                   isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
                 }`}
                 style={{ transitionDelay: `${idx * 200}ms` }}
               >
-                <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-4 relative">
+                  {/* LEFT column (desktop only for even items) */}
                   <div className="md:w-1/2 md:text-right md:pr-12">
                     {idx % 2 === 0 ? (
-                      <div className="glass-card-exp p-6 rounded-xl">
+                      // <-- hidden on mobile, visible on md+
+                      <div className="hidden md:block glass-card-exp p-6 rounded-xl">
                         <h3 className="text-xl font-bold text-white mb-2">{exp.title}</h3>
                         <p className="text-cyan-400 font-medium mb-2">{exp.organization}</p>
                         {exp.description && (
@@ -100,12 +102,15 @@ export const Experience = () => {
                     )}
                   </div>
 
+                  {/* TIMELINE ICON */}
                   <div className="absolute left-8 md:left-1/2 -ml-4 md:-ml-4 w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white border-4 border-slate-950 z-10">
                     {exp.icon}
                   </div>
 
+                  {/* RIGHT column */}
                   <div className="md:w-1/2 md:pl-12 ml-16 md:ml-0">
                     {idx % 2 !== 0 ? (
+                      // For odd items: show desktop+mobile card on the right (no duplication)
                       <div className="glass-card-exp p-6 rounded-xl">
                         <h3 className="text-xl font-bold text-white mb-2">{exp.title}</h3>
                         <p className="text-cyan-400 font-medium mb-2">{exp.organization}</p>
@@ -114,6 +119,7 @@ export const Experience = () => {
                         )}
                       </div>
                     ) : (
+                      // For even items: show mobile-only card here (hidden on md+)
                       <div className="block md:hidden glass-card-exp p-6 rounded-xl -ml-16">
                         <h3 className="text-xl font-bold text-white mb-2">{exp.title}</h3>
                         <p className="text-cyan-400 font-medium mb-2">{exp.organization}</p>
