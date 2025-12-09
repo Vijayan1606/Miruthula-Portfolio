@@ -77,7 +77,8 @@ export const Hero = () => {
               {/* --- REPLACED BUTTON BLOCK (only this section changed) --- */}
               <div className="flex flex-wrap gap-4 justify-center items-center">
                 <a
-                  href="#contact"
+                  href="https://drive.google.com/file/d/1lk7_Nb1vUPUiq9h1j4Rd-UBfEO92Qo_1/view?usp=drivesdk"
+                  target='blank'
                   className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 hover:scale-105 flex items-center gap-2"
                 >
                   <FileDown size={20} className="group-hover:animate-bounce" />
