@@ -84,7 +84,7 @@ export const Hero = () => {
                   Download Resume
                 </a>
                 <a
-                  href="https://github.com/miruthula2040"
+                  href="https://github.com/Miruthula2324"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group px-8 py-4 bg-white/10 backdrop-blur-md text-white font-semibold rounded-full border-2 border-cyan-400/50 transition-all duration-300 hover:bg-white/20 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-400/30 hover:scale-105 flex items-center gap-2"
