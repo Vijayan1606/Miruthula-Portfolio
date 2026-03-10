@@ -4,7 +4,6 @@ import moodify from '../assets/mod.jpeg';
 import realstate from '../assets/loc.jpeg';
 import bookstore from '../assets/book.jpeg';
 import growth from '../assets/growth.jpeg';
-import placement from '../assets/place.jpeg';
 
 interface Project {
   title: string;
@@ -67,16 +66,6 @@ const projects: Project[] = [
     liveUrl: "https://techmintofficial.netlify.app/",
     githubUrl: "",
     image: bookstore,
-  },
-
-  {
-    title: "Placement Management System",
-    description:
-      "Comprehensive student management system with records, attendance, and grade tracking",
-    tech: ["Python", "NLP", "Flask", "Machine Learning"],
-    liveUrl: "https://techmintofficial.netlify.app/",
-    githubUrl: "",
-    image: placement,
   },
 ];
 
