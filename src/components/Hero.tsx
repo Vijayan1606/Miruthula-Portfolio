@@ -77,7 +77,7 @@ export const Hero = () => {
               {/* --- REPLACED BUTTON BLOCK (only this section changed) --- */}
               <div className="flex flex-wrap gap-4 justify-center items-center">
                 <a
-                  href="https://drive.google.com/file/d/16C2aKvrBzrzWEttJZyTJm8XnFCIlirin/view?usp=drivesdk"
+                  href="https://drive.google.com/file/d/12BTB-gyFAqnHdqoP613I9-P-QnUIKXtS/view?usp=drive_link"
                   target='blank'
                   className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 hover:scale-105 flex items-center gap-2"
                 >
